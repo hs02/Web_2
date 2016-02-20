@@ -6,17 +6,7 @@ body {
   background-size: cover;
 }
 	
-h1{
-    
-	color: #feb825;
-	text-align: center;
-	font-family: monospace;
-	margin-top: 50px;
-	font-size: 50px;
-	background: rgba(0,0,0,0.9);
-	
 
-}
 
 .slider {
 	
@@ -27,7 +17,7 @@ h1{
 }
 
 .slider ul {
-	margin-top: 10px;
+	margin-top: 70px;
 	display: flex;
 	padding: 0;
 	width: 900%;
@@ -65,4 +55,23 @@ h1{
 	
 	85% {margin-left: -500%;}
 	100% {margin-left: -500%;}
+}
+
+footer {
+	text-align: center;
+	color: #feb825;
+	margin-top: 20px;
+	font-family: monospace;
+	font-size: 16px;
+	
+}
+
+footer p {
+	width: 600px;
+	margin: 0 auto;
+	color: #ccc;
+	margin-top: 10px;
+	font-family: monospace;
+	font-size: 10px;
+	
 }
