@@ -1,0 +1,21 @@
+
+body {
+  background: #d8c318; 
+}
+
+p {
+  font-family: impact;
+  font-size: 40px;
+  margin-top: 80px;
+  color:#f7f6f4;
+}
+
+
+.efecto{
+  margin-top: 250px;
+  font-size: 25px;
+  font-family: helvetica;
+  font-style: italic;
+  color: #f7f6f4;
+  width: 800px;
+}
