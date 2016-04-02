@@ -1,0 +1,179 @@
+
+body{
+background-color: black;
+
+}
+h4{
+
+text-align: center;
+color: white;
+font-size: 24px;
+font-family: arial;
+margin-top: 10px;
+}
+
+h2{
+font-size: 70px;
+text-align: center;
+color: yellow;
+font-family: impact;
+margin-top: 70px;
+
+}
+#imagen{
+width: 350px;
+height: 350px;
+margin: 30px;
+background-image: url(../images/1.jpg);
+float: left;
+margin-left: 110px;
+}
+
+#info{
+    position: absolute;
+    overflow: hidden;
+width: 350px;
+height: 350px;
+background-color: rgba(204, 204, 0, 0.9);
+-webkit-transition: opacity 0.2s;
+opacity: 0;
+
+}
+
+#imagen:hover #info{
+opacity: 1;
+
+}
+
+#texto{
+position: absolute;
+margin-top: 120px;
+-webkit-transition: margin 0.2s;
+margin-left: -100px;
+font-size: 34px;
+color:white;
+font-family: impact;
+
+}
+
+#imagen:hover #texto{
+margin-left: 50px;
+}
+
+#info2{
+position: absolute;
+margin-top: 180px;
+margin-left: 50px;
+font-family: arial;
+font-size: 28px;
+color:white;
+
+}
+
+
+
+
+#imagen2{
+    float: left;
+    overflow: hidden;
+width: 350px;
+height: 350px;
+margin: 30px;
+background-image: url(../images/22.jpg);
+
+}
+
+#info{
+    position: absolute;
+    overflow: hidden;
+width: 350px;
+height: 350px;
+background-color: rgba(31, 31, 31, 0.9);
+-webkit-transition: opacity 0.2s;
+opacity: 0;
+
+}
+
+#imagen2:hover #info{
+opacity: 1;
+
+}
+
+#texto{
+position: absolute;
+margin-top: 120px;
+-webkit-transition: margin 0.2s;
+margin-left: -100px;
+font-size: 34px;
+color:white;
+font-family: impact;
+
+
+}
+
+#imagen2:hover #texto{
+margin-left: 50px;
+}
+
+#info2{
+position: absolute;
+margin-top: 170px;
+margin-left: 50px;
+font-family: arial;
+font-size: 28px;
+color:white;
+
+}
+
+
+#imagen3{
+overflow: hidden;
+width: 350px;
+height: 350px;
+margin: 30px;
+background-image: url(../images/3.jpg);
+margin-left: 850px;
+
+}
+
+#info{
+    position: absolute;
+    overflow: hidden;
+width: 350px;
+height: 350px;
+background-color: rgba(31, 31, 31, 0.9);
+-webkit-transition: opacity 0.2s;
+opacity: 0;
+
+}
+
+#imagen3:hover #info{
+opacity: 1;
+
+}
+
+#texto{
+position: absolute;
+margin-top: 120px;
+-webkit-transition: margin 0.2s;
+margin-left: -100px;
+font-size: 24px;
+color:white;
+font-family: impact;
+
+
+}
+
+#imagen3:hover #texto{
+margin-left: 50px;
+}
+
+#info2{
+position: absolute;
+margin-top: 170px;
+margin-left: 50px;
+font-family: arial;
+font-size: 24px;
+color:white;
+
+}
