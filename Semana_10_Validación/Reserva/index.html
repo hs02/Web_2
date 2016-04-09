@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Reserva tu cupo</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link href='https://fonts.googleapis.com/css?family=Oleo+Script:400,700' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<h1>Reservación</h1>
+		
+		<div class="formulario">
+			
+		<form action="" method="post" onsubmit="javascript:return Validar(this);">
+			<label> Nombre:</label><br>
+			<input type="text" name="nombre" id="nombre" value="" onblur="javascript:Validar();"> <br>
+			<label>Email:</label><br>
+			<input type="text" name="email" id="email" value=""  onblur="javascript:Validar();"> <br>
+			<label>Password:</label><br>
+			<input type="password" name="pass1" id="pass1" value="" onblur="javascript:Validar();"> <br>
+			<label>Confirmar:</label><br>
+			<input type="password" name="pass2" id="pass2" value="" onblur="javascript:Validar();"> <br>
+			<input type="submit"value="Enviar datos"> <br>
+			<div id="alert">DR8 Bachata Festival</div>
+		</form>
+		<script type="text/javascript">
+		
+		 function Validador(email){
+		 	var tester = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-]+)\.)+([a-zA-Z0-9-]{2,4})+$/;
+		 		return tester.test(email);
+	      }
+          
+          function Validar(){
+          	var nombre = document.getElementById("nombre").value;
+          	var email = document.getElementById("email").value;
+          	var pass1 = document.getElementById("pass1").value;
+          	var pass2 = document.getElementById("pass2").value;
+
+          	if(nombre==""){
+          		$("#alert").html("Debes ingresar un nombre").slideDown(500);
+          	$("#nombre").focus();
+          	return false;
+          	}
+          	else{
+          		$("#alert").html("").slideUp(300);
+          	}
+
+          	if(email==""){
+          		$("#alert").html("Debes ingresar un email").slideDown(500);
+          	$("#email").focus();
+          	return false;
+          	}
+          	else{
+          		$("#alert").html("").slideUp(300);
+          	}
+
+          	if(Validador(email)==false){
+          		$("#alert").html("Ingresa un email válido").slideDown(500);
+          	$("#email").focus();
+          	return false;
+          	}
+          	else{
+          		$("#alert").html("").slideUp(300);
+          	}
+
+          	if(pass1==""){
+          		$("#alert").html("Ingresa tu contraseña").slideDown(500);
+          	$("#pass1").focus();
+          	return false;
+          	}
+          	else{
+          		$("#alert").html("").slideUp(300);
+          	}
+
+          	if(pass2==""){
+          		$("#alert").html("Debes comprobar tu contraseña").slideDown(500);
+          	    $("#pass2").focus();
+          	return false;
+          	}
+          	else{
+          		$("#alert").html("").slideUp(300);
+          	}
+
+          	if(pass2!=pass1){
+          	   $("#alert").html("Las contraseñas no coinciden").slideDown(500);
+          	   $("#pass1").val("");
+          	   $("#pass2").val("");
+          	   $("#pass1").focus();
+          	   return false;
+          	}
+          	else{
+          		$("#alert").html("").slideUp(300);
+          	}
+
+          	
+          }
+		</script>
+
+	</div>
+	</div>
+	
+</body>
+</html>
