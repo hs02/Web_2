@@ -17,16 +17,26 @@ background: url(../images/fondo.jpg) no-repeat center center fixed;
                   text-align: center;
                   width: 300px;
                   height: 50px;
-                  margin-top: 5
-                  0px;
+                  margin-top: 30px;
+
                  }  
+
+                  .btn a { 
+                  text-decoration: none;
+                  background-color: #FFCC66;
+                  border-radius: 10px;
+                  color: #660000;
+                  padding: 10px;
+
+                 }  
+
 
                 .btn{
                   text-align: center;
                   margin-left: 560px;
                   width: 200px;
-                  height: 50px;
-                  margin-top: 30px;
+                  height: 100px;
+                  margin-top: 50px;
                   color: #FFCC66;
                   font-size: 25px;
                   font-family: 'Oleo Script', cursive;
